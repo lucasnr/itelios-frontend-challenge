@@ -1,0 +1,12 @@
+.content {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  padding: 1em;
+
+  .content__title {
+    font-family: 'Roboto Condensed';
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0px;
+  }
+}

@@ -1,0 +1,25 @@
+.sliders {
+  grid-column: 2 / 3;
+  display: flex;
+  margin: auto;
+  margin-bottom: 1em;
+
+  .slider {
+    $size: 12px;
+    $background: #ddd;
+
+    background-color: $background;
+    border-radius: 50%;
+    cursor: pointer;
+    height: $size;
+    width: $size;
+
+    + .slider {
+      margin-left: 10px;
+    }
+
+    &.slider--checked {
+      background-color: darken($color: $background, $amount: 50%);
+    }
+  }
+}

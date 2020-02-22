@@ -1,0 +1,21 @@
+@import './content', './product', './sliders';
+
+body,
+button,
+input {
+  color: #5d6675;
+  font-family: 'Roboto';
+}
+
+button {
+  cursor: pointer;
+}
+
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
+.products {
+  display: flex;
+}
