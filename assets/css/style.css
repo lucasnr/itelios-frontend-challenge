@@ -1,17 +1,46 @@
 .content {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  padding: 1em; }
+  padding: 1em;
+  padding-bottom: 6em; }
   .content .content__title {
     font-family: 'Roboto Condensed';
     font-size: 2em;
     font-weight: bold;
     margin: 0px; }
+  .content #visited {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+  .content #interest {
+    margin: 1em 0px; }
+  .content .products {
+    display: flex;
+    flex-direction: column; }
+    .content .products .product {
+      margin-bottom: 1em;
+      padding: 1.5em 1em; }
+    @media screen and (min-width: 992px) {
+      .content .products {
+        flex-direction: row; }
+        .content .products .product {
+          padding: 1em; }
+          .content .products .product + .product {
+            border-left-width: 0px; } }
+  @media screen and (min-width: 1200px) {
+    .content {
+      align-items: stretch;
+      display: flex; }
+      .content .product {
+        margin-bottom: 0px !important; }
+      .content #interest {
+        margin: 0px; }
+        .content #interest .product:nth-child(1) {
+          border-left-width: 0px; } }
 
 .product {
   background-color: #fff;
-  border: 1px solid #d8dbe0;
-  border-left: 0px;
+  border-color: #d8dbe0;
+  border-style: solid;
+  border-width: 1px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -51,7 +80,7 @@
     display: flex;
     font-size: 1.25em;
     font-weight: bold;
-    justify-content: space-around;
+    justify-content: center;
     padding: 1rem;
     transition: 0.2s linear;
     width: 100%; }
@@ -80,10 +109,12 @@
     z-index: 5; }
 
 .sliders {
-  grid-column: 2 / 3;
   display: flex;
-  margin: auto;
-  margin-bottom: 1em; }
+  justify-content: center;
+  margin: 1em 0px; }
+  @media screen and (min-width: 1200px) {
+    .sliders {
+      margin-top: 0px; } }
   .sliders .slider {
     background-color: #ddd;
     border-radius: 50%;
@@ -107,8 +138,5 @@ button {
 * {
   box-sizing: border-box;
   outline: none; }
-
-.products {
-  display: flex; }
 
 /*# sourceMappingURL=style.css.map */

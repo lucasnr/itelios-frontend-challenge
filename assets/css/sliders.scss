@@ -1,8 +1,11 @@
 .sliders {
-  grid-column: 2 / 3;
   display: flex;
-  margin: auto;
-  margin-bottom: 1em;
+  justify-content: center;
+  margin: 1em 0px;
+
+  @media screen and(min-width: 1200px) {
+    margin-top: 0px;
+  }
 
   .slider {
     $size: 12px;

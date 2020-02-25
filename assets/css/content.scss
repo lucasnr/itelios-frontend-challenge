@@ -1,12 +1,60 @@
 .content {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
   padding: 1em;
+  padding-bottom: 6em;
 
   .content__title {
     font-family: 'Roboto Condensed';
     font-size: 2em;
     font-weight: bold;
     margin: 0px;
+  }
+
+  #visited {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  #interest {
+    margin: 1em 0px;
+  }
+
+  .products {
+    display: flex;
+    flex-direction: column;
+
+    .product {
+      margin-bottom: 1em;
+      padding: 1.5em 1em;
+    }
+
+    @media screen and(min-width: 992px) {
+      flex-direction: row;
+
+      .product {
+        padding: 1em;
+
+        & + .product {
+          border-left-width: 0px;
+        }
+      }
+    }
+  }
+
+  @media screen and(min-width: 1200px) {
+    align-items: stretch;
+    display: flex;
+
+    .product {
+      margin-bottom: 0px !important;
+    }
+
+    #interest {
+      margin: 0px;
+
+      .product:nth-child(1) {
+        border-left-width: 0px;
+      }
+    }
   }
 }
