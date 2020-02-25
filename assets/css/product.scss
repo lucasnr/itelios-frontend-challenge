@@ -38,13 +38,13 @@ $border-color: lighten(
   }
 
   .product__name,
-  .product__value,
+  .product__price,
   .product__installments {
     font-size: 1em;
     font-weight: normal;
   }
 
-  .product__value {
+  .product__price {
     margin-bottom: 0.5em;
     margin-top: auto;
 

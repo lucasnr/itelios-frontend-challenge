@@ -62,14 +62,14 @@
     object-position: center;
     width: 280px; }
   .product .product__name,
-  .product .product__value,
+  .product .product__price,
   .product .product__installments {
     font-size: 1em;
     font-weight: normal; }
-  .product .product__value {
+  .product .product__price {
     margin-bottom: 0.5em;
     margin-top: auto; }
-    .product .product__value strong {
+    .product .product__price strong {
       font-size: 1.5em; }
   .product .product__installments {
     margin: 0px; }
